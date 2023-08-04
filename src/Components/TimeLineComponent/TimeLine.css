@@ -1,0 +1,1051 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 0.2fr 3px 1fr;
+  color: white;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.2em;
+  background: #0c2735;
+  box-shadow: 20px 0px 0px #f1c232;
+  border-radius: 10px;
+  border-bottom-right-radius: 500px;
+  width: 100%;
+  height: 40%;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline_middle {
+  position: relative;
+  background: darkgrey;
+  display: flex; /* Changed "align-items" to "display" */
+  align-items: center;
+  height: 350px;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #0c2735;
+  border-radius: 50%;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* style the Header image section */
+
+.timeLineHeaderImage {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat; /* Changed "none" to "no-repeat" */
+  opacity: 1;
+  margin-bottom: 70px;
+  background-color: black;
+  z-index: 1;
+}
+
+.timeLineHeaderImage-para,
+.timeLineHeaderImage-secondPara,
+.timeLineHeaderImage-ThirdPara {
+  position: absolute;
+  padding-left: 20%;
+  padding-top: 2.7%;
+  color: white;
+  font-size: 130px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.timeLineHeaderImage-secondPara,
+.timeLineHeaderImage-ThirdPara {
+  padding-left: 26%;
+  padding-top: 13%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.timeLineHeaderImage-ThirdPara {
+  padding-top: 14.7%;
+}
+
+/* ------------------------------------------------------- use media queries --------------------------------------------------------- */
+
+/* ==================================================== max-width = 1339px =======================================================  */
+@media screen and (max-width: 1339px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -9%;
+    color: white;
+    font-size: 130px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 27%;
+    padding-top: 14%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 16.6%;
+  }
+
+
+}
+
+
+/* ==================================================== max-width = 1250px =======================================================  */
+@media screen and (max-width: 1250px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -10%;
+    color: white;
+    font-size: 130px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 27%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 18.5%;
+  }
+
+
+}
+
+
+/* ==================================================== max-width = 1055px =======================================================  */
+@media screen and (max-width: 1055px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -10%;
+    color: white;
+    font-size: 120px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 27%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 18.5%;
+  }
+
+
+}
+
+
+
+/* ==================================================== max-width = 1000px =======================================================  */
+@media screen and (max-width: 1000px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -10%;
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 27%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 18.5%;
+  }
+
+
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 980px) {
+
+  .timeline__title {
+    font-size: 1.1em;
+  }
+
+  .timeline__paragraph{
+    font-size: 0.8em;
+    padding-right: 5px;
+  }
+
+  .timeline__component--bg {
+    /* padding: 1.2em; */
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 500px;
+    width: 80%;
+    height: 40%;
+  }
+
+  .timeLineHeaderImage-para {
+    font-size: 100px;
+  }
+
+  .timeLineHeaderImage-para{
+    padding-top: 1%;
+  }
+
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -8%;
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+    padding-top: 14%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 16.9%;
+  }
+
+}
+
+/* ================================================ max-width = 980px ======================================================= */
+
+
+@media screen and (max-width: 651px) {
+
+  .timeline__title {
+    font-size: 1.1em;
+  }
+
+  .timeline__paragraph{
+    font-size: 0.7em;
+    padding-right: 6px;
+  }
+
+  .timeline__component--bg {
+    /* padding: 1.2em; */
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    /* border-radius: 10px; */
+    border-bottom-right-radius: 500px;
+    width: 75%;
+    height: 38%;
+  }
+
+  .timeLineHeaderImage-para{
+    padding-top: 1%;
+    font-size: 80px;
+  }
+
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 18.9%;
+  }
+
+}
+
+
+
+/* ==================================================== max-width = 900px =======================================================  */
+@media screen and (max-width: 900px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -10%;
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 18.5%;
+  }
+
+
+}
+
+/* ==================================================== max-width = 913px =======================================================  */
+@media screen and (max-width: 913px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -2%;
+    color: white;
+    font-size: 110px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 18.5%;
+  }
+
+
+}
+
+
+/* ==================================================== max-width = 821px =======================================================  */
+@media screen and (max-width: 821px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -1%;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 19%;
+  }
+
+
+}
+
+/* ==================================================== max-width = 780px =======================================================  */
+@media screen and (max-width: 780px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -10%;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 19%;
+  }
+
+
+}
+
+
+/* ==================================================== max-width = 712px =======================================================  */
+@media screen and (max-width: 712px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -2%;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 29%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 19.5%;
+  }
+
+
+}
+
+
+
+/* ==================================================== max-width = 676px =======================================================  */
+@media screen and (max-width: 676px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -5%;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 19.5%;
+  }
+
+
+}
+
+
+
+/* ==================================================== max-width = 613px =======================================================  */
+@media screen and (max-width: 613px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -5%;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+    padding-top: 16%;
+    font-size: 1rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 20%;
+  }
+
+
+}
+
+
+
+/* ==================================================== max-width = 555px =======================================================  */
+@media screen and (max-width: 555px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -5%;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+    padding-top: 16%;
+    font-size: 1.2rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 20%;
+  }
+
+
+}
+
+
+
+/* ======================================================= max-width : 547px ================================================ */
+@media screen and (max-width: 547px)  {
+
+  .timeline__component--bg {
+    padding: 1.2em;
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    border-radius: 10px;
+    border-bottom-right-radius: 500px;
+    width: 80%;
+    height: 50%;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline_middle {
+    position: relative;
+    background: darkgrey;
+    display: flex; /* Changed "align-items" to "display" */
+    align-items: center;
+    height: 240px;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #0c2735;
+    border-radius: 50%;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+    padding-right: 10px;
+    font-size: 0.6rem;
+  }
+  
+  /* style the Header image section */
+  
+  .timeLineHeaderImage {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat; /* Changed "none" to "no-repeat" */
+    opacity: 1;
+    margin-bottom: 70px;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -4%;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+     top: -3%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .timeLineHeaderImage-ThirdPara {
+    top: -2.5%;
+  }
+  
+}
+
+
+
+/* ======================================================= max-width : 466px ================================================ */
+@media screen and (max-width: 466px)  {
+
+  .timeline__component--bg {
+    padding: 1.2em;
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    border-radius: 10px;
+    border-bottom-right-radius: 500px;
+    width: 75%;
+    height: 50%;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline_middle {
+    position: relative;
+    background: darkgrey;
+    display: flex; /* Changed "align-items" to "display" */
+    align-items: center;
+    height: 200px;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #0c2735;
+    border-radius: 50%;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+    padding-right: 10px;
+    font-size: 8px;
+  }
+  
+  /* style the Header image section */
+  
+  .timeLineHeaderImage {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat; /* Changed "none" to "no-repeat" */
+    opacity: 1;
+    margin-bottom: 70px;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: 0%;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 28%;
+     top: -1%;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+  
+  .timeLineHeaderImage-ThirdPara {
+    top: -1.5%;
+  }
+  
+}
+
+
+/* ==================================================== max-width = 413px =======================================================  */
+@media screen and (max-width: 413px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -2%;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+    padding-top: 18%;
+    font-size: 0.7rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 22%;
+  }
+
+
+}
+
+
+/* ==================================================== max-width = 394px =======================================================  */
+@media screen and (max-width: 394px) {
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -2%;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+    padding-top: 18%;
+    font-size: 0.7rem;
+  }
+
+  .timeLineHeaderImage-ThirdPara {
+    padding-top: 22%;
+  }
+
+
+}
+
+
+
+/* ==================================================== mqx-width : 376px ================================================= */
+@media screen and (max-width: 376px) {
+
+  .timeline__component--bg {
+    padding: 1.2em;
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    border-radius: 10px;
+    border-bottom-right-radius: 500px;
+    width: 73%;
+    height: 50%;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline_middle {
+    position: relative;
+    background: darkgrey;
+    display: flex; /* Changed "align-items" to "display" */
+    align-items: center;
+    height: 200px;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #0c2735;
+    border-radius: 50%;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+    padding-right: 10px;
+    font-size: 8px;
+  }
+
+
+
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -1%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+     top: -2%;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .timeLineHeaderImage-ThirdPara {
+    top: -2.1%;
+  }
+  
+}
+
+
+/* ==================================================== mqx-width : 316px ================================================= */
+@media screen and (max-width: 316px) {
+
+  .timeline__component--bg {
+    padding: 1.2em;
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    border-radius: 10px;
+    border-bottom-right-radius: 500px;
+    width: 73%;
+    height: 50%;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline_middle {
+    position: relative;
+    background: darkgrey;
+    display: flex; /* Changed "align-items" to "display" */
+    align-items: center;
+    height: 200px;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #0c2735;
+    border-radius: 50%;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+    padding-right: 10px;
+    font-size: 8px;
+  }
+
+
+
+
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -1%;
+    color: white;
+    font-size: 44.5px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 30%;
+     top: -2%;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .timeLineHeaderImage-ThirdPara {
+    top: -2.1%;
+  }
+  
+}
+
+
+
+/* ======================================================= max-width : 280px ================================================ */
+@media screen and (max-width: 280px)  {
+
+  .timeline__component--bg {
+    padding: 1.2em;
+    background: #0c2735;
+    box-shadow: 20px 0px 0px #f1c232;
+    border-radius: 10px;
+    border-bottom-right-radius: 500px;
+    width: 60%;
+    height: 20%;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline_middle {
+    position: relative;
+    background: darkgrey;
+    display: flex; /* Changed "align-items" to "display" */
+    align-items: center;
+    height: 200px;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #0c2735;
+    border-radius: 50%;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+    padding-right: 10px;
+    font-size: 5px;
+  }
+  
+  /* style the Header image section */
+  
+  .timeLineHeaderImage {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat; /* Changed "none" to "no-repeat" */
+    opacity: 1;
+    margin-bottom: 70px;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  .timeLineHeaderImage-para,
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    position: absolute;
+    padding-left: 20%;
+    top: -4%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .timeLineHeaderImage-secondPara,
+  .timeLineHeaderImage-ThirdPara {
+    padding-left: 32%;
+     top: -2%;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .timeLineHeaderImage-ThirdPara {
+    top: -1.2%;
+  }
+  
+}

@@ -1,0 +1,50 @@
+/* body{
+  background-color: rgb(0, 0, 0);
+} */
+
+
+
+.Time-Line-header{
+   text-align: center;
+   color: white;
+   margin-bottom: 80px;
+}
+
+/* add css in to the description and date */
+
+#description{
+ color: black;
+}
+
+.date{
+  color: white;
+}
+
+.icon{
+  background-color: #0c2735;
+}
+
+
+.key{
+  background-color: black;
+}
+
+/* add css to VerticalTimeline */
+.VerticalTimeline::before{
+   background-color: #201dd2;
+
+}
+
+
+/* add css to vertical-timeline-elements-div */
+.vertical-timeline-elements-div{
+  background: transparent;
+  background-size: cover;
+}
+
+
+/*  */
+
+
+
+
